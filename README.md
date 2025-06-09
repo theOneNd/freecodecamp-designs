@@ -6,7 +6,8 @@
 
 Using this repo, I will make web pages taken from freecodecamp using just HTML and CSS. 
 These include:
-1. Cafe Menu (tutorial page)
-2. Colored Markers (tutorial page)
+1. Cafe Menu - *(from tutorial)*
+2. Colored Markers - *(from tutorial)*
+3. Registration Page - *(from tutorial)*
 
 **P.S.** - I shall connect each of them using one home page.
