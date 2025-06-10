@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ND Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">ND Survey Form</h1>
+  <p id="description>">Just creating my own survey form using the lessons I learned</p>
+  <form id="survey-form" action="" method="">
+    <label for="name-label">Name: <input id="name-label" name="name" type="text" placeholder="E.g. John Doe" /></label>
+    <label for="email-label">Email: <input id="email-label" name="name" type="email" placeholder="example@example.com" /></label>
+    <label for="number-label">Number: <input id="number-label" name="name" type="number" min="18" max="120" placeholder="18" /></label>
+    <label for="dropdown">Dropdown: 
+      <select id="dropdown">
+        <option value="1" selected>1</option>
+        <option value="2" >2</option>
+      </select>
+    </label>
+    <label><input type="radio" name="options" value="1"/> option 1</label>
+    <label><input type="radio" name="options" value="2"/> option 2</label>
+    <label><input type="radio" name="options" value="3"/> option 3</label>
+
+    <label><input type="checkbox" value="1"/> check 1</label>
+    <label><input type="checkbox" value="2"/> check 2</label>
+    <label><input type="checkbox" value="3"/> check 3</label>
+
+    <label>Enter your text here:
+      <textarea cols="10" rows="4" placeholder="add text"></textarea>
+    </label>
+
+    <input id="submit" type="submit" value="Submit" />
+  </form>
+</body>
+</html>
