@@ -3,6 +3,7 @@ body {
   height: 100vh;
   margin: 0;
   background-image: url(https://wallpapers.com/images/high/man-vs-gods-record-of-ragnarok-aw4w9bomlj58jwx9.webp);
+  /* background-image: url(../Assets/ror-image-2.jpg); */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
