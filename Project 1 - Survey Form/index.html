@@ -14,30 +14,185 @@
     <form id="survey-form" action="" method="post">
 
       <fieldset> 
-        <label for="name" id="name-label">Name/Username<input id="name" name="name" type="text" placeholder="E.g. John Doe" required /></label>
+        <label for="name" id="name-label">Any Name<input id="name" name="name" type="text" placeholder="E.g. John Doe" required /></label>
         <label for="email" id="email-label">Email<input id="email" name="name" type="email" placeholder="E.g. example@example.com" required /></label>
         <label for="number" id="number-label">Age <em>(optional)</em><input id="number" name="name" type="number" min="1" max="120" placeholder="E.g. 18" /></label>
       </fieldset>
 
       <fieldset>
-        <label for="radio-1"><input id="radio-1" class="inline" type="radio" name="options" value="1"/> option 1</label>
-        <label for="radio-2"><input id="radio-2" class="inline" type="radio" name="options" value="2"/> option 2</label>
-        <label for="radio-3"><input id="radio-3" class="inline" type="radio" name="options" value="3"/> option 3</label>
+        <legend>Which ROR round would you say is your favorite so far?</legend>
+        <label class="radio-label" for="radio-1"><input id="radio-1" class="inline" type="radio" name="favorite-round" value="1"/> Round 1 - <span>Lu Bu vs. Thor</span></label>
+        <label class="radio-label" for="radio-2"><input id="radio-2" class="inline" type="radio" name="favorite-round" value="2"/> Round 2 - <span>Adam vs. Zeus</span></label>
+        <label class="radio-label" for="radio-3"><input id="radio-3" class="inline" type="radio" name="favorite-round" value="3"/> Round 3 - <span>Sasaki Kojiro vs. Poseidon</span></label>
+        <label class="radio-label" for="radio-4"><input id="radio-4" class="inline" type="radio" name="favorite-round" value="4"/> Round 4 - <span>Jack the Ripper vs. Heracles</span></label>
+        <label class="radio-label" for="radio-5"><input id="radio-5" class="inline" type="radio" name="favorite-round" value="5"/> Round 5 - <span>Raiden Tameemon vs. Shiva</span></label>
+        <label class="radio-label" for="radio-6"><input id="radio-6" class="inline" type="radio" name="favorite-round" value="6"/> Round 6 - <span>Buddha vs. Zerofuku/Hajun</span></label>
+        <label class="radio-label" for="radio-7"><input id="radio-7" class="inline" type="radio" name="favorite-round" value="7"/> Round 7 - <span>Qin Shi Huang vs. Hades</span></label>
+        <label class="radio-label" for="radio-8"><input id="radio-8" class="inline" type="radio" name="favorite-round" value="8"/> Round 8 - <span>Nikola Tesla vs. Beelzebub</span></label>
+        <label class="radio-label" for="radio-9"><input id="radio-9" class="inline" type="radio" name="favorite-round" value="9"/> Round 9 - <span>Leonidas vs. Apollo</span></label>
+        <label class="radio-label" for="radio-10"><input id="radio-10" class="inline" type="radio" name="favorite-round" value="10"/> Round 10 - <span>Okita Souji vs. Susanoo'o no Mikoto</span></label>
+        <label class="radio-label" for="radio-11"><input id="radio-11" class="inline" type="radio" name="favorite-round" value="11"/> Round 11 - <span>Simo Hayha vs. Loki <em>(ongoing)</em></span></label>
+        </fieldset>
+
+      <fieldset>
+        <legend>What did you enjoy most about your favorite round?</legend>
+        <label class="box-label" for="box-1"><input id="box-1" class="inline" type="checkbox" value="1"/> The Fight Itself <em>(Action)</em></label>
+        <label class="box-label" for="box-2"><input id="box-2" class="inline" type="checkbox" value="2"/> Fighter Human's Backstory</label>
+        <label class="box-label" for="box-3"><input id="box-3" class="inline" type="checkbox" value="3"/> Fighter God's Backstory</label>
+        <label class="box-label" for="box-4"><input id="box-4" class="inline" type="checkbox" value="4"/> The Techniques Used</label>
+        <label class="box-label" for="box-5"><input id="box-5" class="inline" type="checkbox" value="5"/> The Arena</label>
+        <label class="box-label" for="box-6"><input id="box-6" class="inline" type="checkbox" value="6"/> The Supporters in the Stands - <em>(Humanity)</em></label>
+        <label class="box-label" for="box-7"><input id="box-7" class="inline" type="checkbox" value="7"/> The Supporters in the Stands - <em>(Gods)</em></label>
+        <label class="box-label" for="box-7"><input id="box-7" class="inline" type="checkbox" value="7"/> Humanity's fighter</em></label>
+        <label class="box-label" for="box-7"><input id="box-7" class="inline" type="checkbox" value="7"/> Gods' fighter<label>
       </fieldset>
-      <fieldset></fieldset>
+
+      <fieldset>
+        <legend>Answer the following <em>(optional)</em></legend>
+        <label for="dropdown-1">Favorite Human Fighter
+          <select id="dropdown-1" name="favHumanFighter">
+            <option value="">(select one)</option>
+            <option value="lu_bu">Lu Bu</option>
+            <option value="adam">Adam</option>
+            <option value="sasaki_kojiro">Sasaki Kojiro</option>
+            <option value="jack_the_ripper">Jack the Ripper</option>
+            <option value="raiden_tameemon">Raiden Tameemon</option>
+            <option value="qin_shi_huang">Qin Shi Huang</option>
+            <option value="nikola_tesla">Nikola Tesla</option>
+            <option value="leonidas">Leonidas</option>
+            <option value="okita_souji">Okita Souji</option>
+            <option value="simo_hayha">Simo Hayha</option>
+          </select>
+        </label>
+        <label for="dropdown-2">Favorite God Fighter
+          <select id="dropdown-2" name="favGodFighter">            
+            <option value="">(select one)</option>
+            <option value="thor">Thor</option>
+            <option value="zeus">Zeus</option>
+            <option value="poseidon">Poseidon</option>
+            <option value="hercules">Hercules</option>
+            <option value="shiva">Shiva</option>
+            <option value="buddha">Buddha</option>
+            <option value="bishamonten">Bishamonten</option>
+            <option value="zerofuku">Zerofuku</option>
+            <option value="hajun">Hajun</option>
+            <option value="hades">Hades</option>
+            <option value="beelzebub">Beelzebub</option>
+            <option value="apollo">Apollo</option>
+            <option value="susanoo">Susanoo'o no Mikoto</option>
+            <option value="loki">Loki</option>
+          </select>
+        </label>
+        <label for="dropdown-4">Least Favorite Fighter
+          <select id="dropdown-4" name="leastFavFighter">
+            <option value="">(select one)</option>
+            <option value="lu_bu">Lu Bu</option>
+            <option value="adam">Adam</option>
+            <option value="sasaki_kojiro">Sasaki Kojiro</option>
+            <option value="jack_the_ripper">Jack the Ripper</option>
+            <option value="raiden_tameemon">Raiden Tameemon</option>
+            <option value="buddha">Buddha</option>
+            <option value="qin_shi_huang">Qin Shi Huang</option>
+            <option value="nikola_tesla">Nikola Tesla</option>
+            <option value="leonidas">Leonidas</option>
+            <option value="okita_souji">Okita Souji</option>
+            <option value="simo_hayha">Simo Hayha</option>
+
+            <option value="thor">Thor</option>
+            <option value="zeus">Zeus</option>
+            <option value="poseidon">Poseidon</option>
+            <option value="hercules">Hercules</option>
+            <option value="shiva">Shiva</option>
+            <option value="zerofuku">Zerofuku</option>
+            <option value="hajun">Hajun</option>
+            <option value="hades">Hades</option>
+            <option value="beelzebub">Beelzebub</option>
+            <option value="apollo">Apollo</option>
+            <option value="susanoo">Susanoo'o no Mikoto</option>
+            <option value="loki">Loki</option>
+          </select>
+        </label>
+
+        <label for="dropdown-5">Fighter who deserved better
+          <select id="dropdown-5" name="select">
+            <option value="">(select one)</option>
+            <option value="lu_bu">Lu Bu</option>
+            <option value="adam">Adam</option>
+            <option value="sasaki_kojiro">Sasaki Kojiro</option>
+            <option value="jack_the_ripper">Jack the Ripper</option>
+            <option value="raiden_tameemon">Raiden Tameemon</option>
+            <option value="buddha">Buddha</option>
+            <option value="qin_shi_huang">Qin Shi Huang</option>
+            <option value="nikola_tesla">Nikola Tesla</option>
+            <option value="leonidas">Leonidas</option>
+            <option value="okita_souji">Okita Souji</option>
+            <option value="simo_hayha">Simo Hayha</option>
+
+            <option value="thor">Thor</option>
+            <option value="zeus">Zeus</option>
+            <option value="poseidon">Poseidon</option>
+            <option value="hercules">Hercules</option>
+            <option value="shiva">Shiva</option>
+            <option value="bishamonten">Bishamonten</option>
+            <option value="zerofuku">Zerofuku</option>
+            <option value="hajun">Hajun</option>
+            <option value="hades">Hades</option>
+            <option value="beelzebub">Beelzebub</option>
+            <option value="apollo">Apollo</option>
+            <option value="susanoo">Susanoo'o no Mikoto</option>
+            <option value="loki">Loki</option>
+          </select>
+        </label>
+
+        <label for="dropdown-6">Best Entrance <em>(manga/anime)</em>
+          <select id="dropdown-6" name="bestEntrance">
+            <option value="">(select one)</option>
+            <option value="lu_bu">Lu Bu</option>
+            <option value="adam">Adam</option>
+            <option value="sasaki_kojiro">Sasaki Kojiro</option>
+            <option value="jack_the_ripper">Jack the Ripper</option>
+            <option value="raiden_tameemon">Raiden Tameemon</option>
+            <option value="buddha">Buddha</option>
+            <option value="qin_shi_huang">Qin Shi Huang</option>
+            <option value="nikola_tesla">Nikola Tesla</option>
+            <option value="leonidas">Leonidas</option>
+            <option value="okita_souji">Okita Souji</option>
+            <option value="simo_hayha">Simo Hayha</option>
+
+            <option value="thor">Thor</option>
+            <option value="zeus">Zeus</option>
+            <option value="poseidon">Poseidon</option>
+            <option value="hercules">Hercules</option>
+            <option value="shiva">Shiva</option>
+            <option value="zerofuku">Zerofuku</option>
+            <option value="hajun">Hajun</option>
+            <option value="hades">Hades</option>
+            <option value="beelzebub">Beelzebub</option>
+            <option value="apollo">Apollo</option>
+            <option value="susanoo">Susanoo'o no Mikoto</option>
+            <option value="loki">Loki</option>
+          </select>
+        </label>
+
+        <label for="input-1">Favorite Non-fighter
+          <input type="text" id="input-1" class="opt-input" name="favNon-fighter" placeholder="E.g. John Doe" />
+        </label>
+        <label for="input-2">Least Favorite Character <em>(Non-fighter)</em>
+          <input type="text" id="input-2" class="opt-input" name="leastFavChar" placeholder="E.g. John Doe" />
+        </label>
+        <label for="input-3">Favorite Fighting Technique
+          <input type="text" id="input-3" class="opt-input" name="favTech" placeholder="E.g. John Doe" />
+        </label>
+        <label for="input-4">Favorite Weapon
+          <input type="text" id="input-4" class="opt-input" name="favWeapon" placeholder="E.g. John Doe" />
+        </label>
+        <label for="input-5">Character you hated at first but came to like
+          <input type="text" id="input-5" class="opt-input" name="hateToLike" placeholder="E.g. John Doe" />
+        </label>
+      </fieldset>
       
-      <label for="box-1"><input id="box-1" class="inline" type="checkbox" value="1"/> check 1</label>
-      <label for="box-2"><input id="box-2" class="inline" type="checkbox" value="2"/> check 2</label>
-      <label for="box-3"><input id="box-3" class="inline" type="checkbox" value="3"/> check 3</label>
-      
-      <label for="dropdown">Dropdown
-        <select id="dropdown" name="select">
-          <option value="1" selected>1</option>
-          <option value="2" >2</option>
-        </select>
-      </label>
-      <label for="comments">Enter your text here:
-        <textarea for="comments" cols="10" rows="4" placeholder="add text"></textarea>
+      <label id="comments-label" for="comments">If you have any comments to add, put it down below
+        <textarea id="comments" cols="10" rows="4" placeholder="add your comment here"></textarea>
       </label>
   
       <input id="submit" type="submit" value="Submit" />
