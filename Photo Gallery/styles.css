@@ -30,6 +30,7 @@ body  {
 }
 
 .gallery img {
+  /* width, max-width and height are ESSENTIALS */
   width: 100%;
   max-width: 350px;
   height: 300px;
