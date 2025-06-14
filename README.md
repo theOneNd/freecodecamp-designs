@@ -12,5 +12,6 @@ These include:
 4. Survey Form - *(certification project)*
 5. Photo Gallery
 6. Nutrition Label
+7. Accessibility Quiz App
 
 **P.S.** - I shall connect each of them using one home page.
