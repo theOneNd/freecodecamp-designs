@@ -3,6 +3,7 @@
     scroll-behavior: smooth;
   }
 };
+
 body {
   background: #f5f6f7;
   color: #1b1b32;
@@ -10,37 +11,33 @@ body {
   margin: 0;
 }
 
-#logo {
-  width: max(10rem, 18vw);
-  background-color: #0a0a23;
-  aspect-ratio: 35/4;
-  padding: 0.4rem;
-}
 header {
   width: 100%;
   height: 50px;
   background-color: #1b1b32;
-  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  top: 0;
 }
-h1, h2 {
-  font-family: Verdana, sans-serif;
+
+#logo {
+  width: max(10rem, 18vw);
+  background-color: #0a0a23;
+  aspect-ratio: 35 / 4;
+  padding: 0.4rem;
 }
-h2 {
-  border-bottom: 4px solid #dfdfe2;
-  margin-top: 0;
-  padding-top: 60px;  
-}
+
 h1 {
   color: #f1be32;
   font-size: min(5vw, 1.2em);
   text-align: center;
 }
 
-main {
-  padding-top: 25px;
+nav {
+  width: 50%;
+  max-width: 300px;
+  height: 50px;
 }
 
 nav > ul {
@@ -50,21 +47,7 @@ nav > ul {
   align-items: center;
   padding-inline-start: 0;
   margin-block: 0;
-  height: 100%;  
-}
-
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  clip-path: inset(50%);
-  white-space: nowrap;
-}
-
-h3::before {
-  content: "Question #";
+  height: 100%;
 }
 
 nav > ul > li {
@@ -75,8 +58,8 @@ nav > ul > li {
 }
 
 nav > ul > li:hover {
-  color: #1b1b32;
   background-color: #dfdfe2;
+  color: #1b1b32;
   cursor: pointer;
 }
 
@@ -85,23 +68,42 @@ li > a {
   text-decoration: none;
 }
 
+main {
+  padding-top: 50px;
+}
+
 section {
   width: 80%;
   margin: 0 auto 10px auto;
   max-width: 600px;
 }
 
+h1,
+h2 {
+  font-family: Verdana, Tahoma;
+}
+
+h2 {
+  border-bottom: 4px solid #dfdfe2;
+  margin-top: 0px;
+  padding-top: 60px;
+}
+
 .info {
-  padding: 10px 0 0 10px;
+  padding: 10px 0 0 5px;
 }
 
 .formrow {
-  margin: 10px 0 0 0;
-  padding: 0 1px;
+  margin-top: 30px;
+  padding: 0px 15px;
 }
 
 input {
-  font-size: 13px;
+  font-size: 1rem;
+}
+
+.info label, .info input {
+  display: inline-block;
 }
 
 .info input {
@@ -111,12 +113,8 @@ input {
 
 .info label {
   width: 10%;
-  text-align: right;
   min-width: 55px;
-}
-
-.info input, .info label {
-  display: inline-block;
+  text-align: right;
 }
 
 .question-block {
@@ -130,13 +128,18 @@ input {
 h3 {
   margin-top: 5px;
   padding-left: 15px;
-  font-size: 1.375rem; 
+  font-size: 1.375rem;
+}
+
+h3::before {
+  content: "Question #";
 }
 
 .question {
   border: none;
   padding-bottom: 0;
 }
+
 .answers-list {
   list-style: none;
   padding: 0;
@@ -166,4 +169,14 @@ footer a {
 address {
   text-align: center;
   padding: 0.3em;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
 }

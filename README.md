@@ -13,5 +13,6 @@ These include:
 5. Photo Gallery
 6. Nutrition Label
 7. Accessibility Quiz App
+8. Tribute Page - *(certification project)*
 
 **P.S.** - I shall connect each of them using one home page.
