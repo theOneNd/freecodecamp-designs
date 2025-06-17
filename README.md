@@ -14,5 +14,6 @@ These include:
 6. Nutrition Label
 7. Accessibility Quiz App
 8. Tribute Page - *(certification project)*
+9. Balance Sheet
 
 **P.S.** - I shall connect each of them using one home page.
